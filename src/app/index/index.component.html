@@ -1,0 +1,761 @@
+<section class="d-flex flex-column justify-content-between" id="main">
+    <div id="main-top">
+        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" [ngx-scroll-to]="'main'" style="background-image:url(&quot;assets/img/logo-white.png&quot;);width:150px;background-position:center;background-size:contain;background-repeat:no-repeat;height:50px;"></a>
+                <button class="navbar-toggler" (click)="isCollapsed = !isCollapsed" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
+                    <ul class="nav navbar-nav d-lg-flex align-items-center ml-auto">
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [ngx-scroll-to]="'main'">Home</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [ngx-scroll-to]="'intro'">About</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [ngx-scroll-to]="'full-stack'">Training Roadmap</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [ngx-scroll-to]="'what'">Certification</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [ngx-scroll-to]="'career-service'">Career Service</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [ngx-scroll-to]="'team'">Team</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [ngx-scroll-to]="'events'">Events</a></li>
+                        <!-- <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/seminar']">Attend Seminar</a></li> -->
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/contact']">Contact</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation">
+                            <a class="nav-link" [routerLink]="['/seminar']">
+                                <button class="btn btn-primary nav-apply-btn">Seminar</button>
+                            </a>
+                        </li>
+                        <li class="nav-item align-middle h-100" role="presentation">
+                            <a class="nav-link" [routerLink]="['/apply']">
+                                <button class="btn btn-primary nav-apply-btn">Apply</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1 class="text-center" id="head-title"><br>Job Oriented Training, Professional Approach &amp; Hands on Training. We Help You Learn To Earn Certification<br><br>
+        </h1>
+        <h3 class="text-center" id="cert-title"><br>MCSA&nbsp;<br>(Microsoft Certified Solution Associate)<br><br></h3>
+    </div>
+    <div id="main-bottom">
+        <div class="container">
+                <div class="row">
+                    <div class="col-xs-4 col-md-2 col-sm-4 col-xl-2 col-lg-4 offset-md-4" id="reg-btn">
+                        <button class="btn btn-primary btn-block" type="button" id="register" [routerLink]="['/apply']">APPLY</button>
+                    </div>
+                    <div class="col-xl-2 d-none d-sm-none d-lg-none d-xl-block" id="reg-btn">
+                        <button class="btn btn-primary btn-block" type="button" id="register" [routerLink]="['/seminar']">ATTEND SEMINAR</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+<section id="intro">
+    <div class="container" id="intro-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12" id="company-intro">
+            <h3>Vvork Cloud Technologies</h3>
+            <p>We aim at becoming very reliable partner of the parents and society to make each student a truly great person with extreme motivation, creative idea and supreme talents so that they can achieve extraordinary goals and objectives.The students of VCT
+                become aware of the purpose of life and talent for refinement. We are building a certified developers to lead the world.! <br/>We initiated the project of certification based developers to contribute towards development of new products and aim of VCT
+                is to fulfill the gap between fresh degree holders and industry by offering hands on training of most advance technologies to change their entry level from inertness to full stack programmer to gain at least six figure salary after one year.</p>
+            </div>
+                <div class="col-lg-12 d-none d-md-none d-sm-none d-lg-block" id="intro-video">
+                <div class="video-large" data-aos="fade-up">
+                    <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/4S9C-m9EhCU?ecver=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=912&amp;width=912" width="912" height="513" allowtransparency="true" frameborder="0"><div>discount for <a rel="nofollow" id="a1UT16JU" href="https://www.workingvouchers.co.uk/hsamuel.co.uk">H Samuel online only</a> here</div><script type="text/javascript">function execute_YTvideo(){return youtube.query({ids:"channel==MINE",startDate:"2018-01-01",endDate:"2018-12-31",metrics:"views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained",dimensions:"day",sort:"day"}).then(function(e){},function(e){console.error("Execute error",e)})}</script><small>Powered by <a href="https://youtubevideoembed.com/">Embed YouTube Video</a></small></iframe></div>
+                </div>
+                </div>
+
+                <div class="col-lg-12 d-md-block d-sm-block d-none d-xs-none d-lg-none d-xl-none" id="intro-video">
+                <div class="video-small">
+                    <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/4S9C-m9EhCU?ecver=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" allowtransparency="true" frameborder="0"><div>discount for <a rel="nofollow" id="a1UT16JU" href="https://www.workingvouchers.co.uk/hsamuel.co.uk">H Samuel online only</a> here</div><script type="text/javascript">function execute_YTvideo(){return youtube.query({ids:"channel==MINE",startDate:"2018-01-01",endDate:"2018-12-31",metrics:"views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained",dimensions:"day",sort:"day"}).then(function(e){},function(e){console.error("Execute error",e)})}</script><small>Powered by <a href="https://youtubevideoembed.com/">Embed YouTube Video</a></small></iframe></div>
+                </div>
+                </div>
+
+                <div class="col-lg-12 d-xs-block d-sm-none d-md-none d-lg-none" id="intro-video">
+                <div class="video-small">
+                    <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/4S9C-m9EhCU?ecver=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=336&amp;width=336" width="336" height="189" allowtransparency="true" frameborder="0"><div>discount for <a rel="nofollow" id="a1UT16JU" href="https://www.workingvouchers.co.uk/hsamuel.co.uk">H Samuel online only</a> here</div><script type="text/javascript">function execute_YTvideo(){return youtube.query({ids:"channel==MINE",startDate:"2018-01-01",endDate:"2018-12-31",metrics:"views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained",dimensions:"day",sort:"day"}).then(function(e){},function(e){console.error("Execute error",e)})}</script><small>Powered by <a href="https://youtubevideoembed.com/">Embed YouTube Video</a></small></iframe></div>
+                </div>
+                </div>
+            </div>
+    </div>
+</section>
+<section  id="gettos">
+      <div class="container">
+        <div class="row">
+              <div class="col-xs-12 col-sm-6 col-lg-3 col-xl-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">
+                <div class="intro-bottom">
+                    <h3 class="intro-bot-head">YOUR CAREER STARTS FROM DAY ONE</h3>
+                    <p class="intro-bot-para">Your career as a full-stack software developer starts on your first day. Within one year we’ll turn you into a self-sufficient, well-rounded full stack developer who has all the critical skills to have a long, healthy career in tech</p>
+                </div>
+                </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 col-xl-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
+                  <div class="intro-bottom">
+                      <h3 class="intro-bot-head">YOU GET WHAT YOU PUT IN</h3>
+                      <p class="intro-bot-para">Students are expected to dedicate at least 70 hours/week to the program, with the most successful students dedicating 70-90 hours/week. Our students often say that a Vvork cloud technology is the most rewarding, yet difficult thing they’ve ever done</p>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 col-xl-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                  <div class="intro-bottom">
+                      <h3 class="intro-bot-head">LEARN BY DOING</h3>
+                      <p class="intro-bot-para">You’ll start coding from day one on campus. Dive into a fast-paced, innovative learning environment that fosters collaboration, not competition. After graduation, you’ll jump straight into the job-hunt with the support of our career services team</p>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-3 col-xl-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+                  <div class="intro-bottom">
+                      <h3 class="intro-bot-head">PRACTICAL LEARNING</h3>
+                      <p class="intro-bot-para">You’ll start coding from day one in class. Practical learning environment that fosters collaboration, not competition. After MCSA, you’ll jump straight into the job-hunt with the support of our career services team</p>
+                  </div>
+              </div>
+            </div>
+      </div>
+</section>
+<section id="full-stack">
+        <div class="container">
+          <h2>Full-stack Development Within One Year</h2>
+          <p>We provide hands on training</p>
+          <img src="../../assets/img/track-road.svg" alt="Training Roadmap">
+        </div>
+</section>
+<section id="why">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-lg-6">
+                    <h3>Why you choose Vvork?</h3>
+                    <p><br />Vvork Cloud Technologies Showcase a nation’s future. We Represent the hope of parents capitalize upon the aspirations of very young generation and respond the needs and challenges facing the society.<br />At VCT, we aim at becoming very reliable
+                        partner of the parents and society to make each student a truly great person with extreme motivation, creative idea and supreme talents so that they can achieve extraordinary goals and objectives.<br /><br /></p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-lg-6">
+                    <h3>Why we suggest Vvork?<br /></h3>
+                    <p>Vvork Cloud Technologies Showcase a nation’s future. We Represent the hope of parents capitalize upon the aspirations of very young generation and respond the needs and challenges facing the society.<br /></p>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="what">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="mcsa-col">
+                    <div id="banner"></div>
+                </div>
+                <div class="col-12" id="mcsa-matter">
+                    <h3>What is involved?<br></h3>
+                    <p>Earning an MCSA: Windows 10 certification qualifies you for a position as a computer support specialist.<br></p>
+                    <ul>
+                        <li><strong>STEP 1 - SKILLS:</strong>&nbsp;Possess introductory IT skills through existing knowledge or optional MTA Certification<br></li>
+                        <li><strong>STEP 2 - EXAMS:</strong>&nbsp;Pass 2 required exams. Be sure to explore the exam prep resources<br></li>
+                        <li><strong>STEP 3 - CERTIFICATION:</strong>&nbsp;MCSA Certification<br></li>
+                        <li><strong>STEP 4 - CONTINUING EDUCATION:</strong>&nbsp;Earn an MCSE by passing 1 related exam<br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="campus-env">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Campus Environment<br></h3>
+                    <p>We have three different slots of training Morning afternoon and evening. You will learn through hands on training and assistant students always available there to solve your problem and queries. Air conditioner labs will be providing
+                        you to learn through practical and your practice. Every session will be of 4 hours.<br></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center">Class Timing</h3>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Morning</th>
+                                    <th>Afternoon</th>
+                                    <th>Evening</th>
+                                    <th>Registration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10:00 AM-2:00 PM</td>
+                                    <td>10:00 AM-2:00 PM<br></td>
+                                    <td>10:00 AM-2:00 PM<br></td>
+                                    <td>CLOSED<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="career-service">
+        <div class="container">
+            <div class="row" id="core">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h3>Career Services<br></h3>
+                    <p>We offer career support to all students and alumni to help accomplish their short and long-term career goals. Whether you’re applying for your first job or you’re an industry veteran, we understand that building a career is a life-long
+                        process.<br></p>
+                    <p>Participants of the program will have access to a wide range of services, such as one-on-one sessions with a career advisor, open forums with industry leaders, comprehensive job-hunting workshops, and more!<br></p>
+                </div>
+            </div>
+            <div class="row" id="types">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div id="one-to-one"></div>
+                    <h3>One-on-One Mentorship<br></h3>
+                    <p>Schedule one-on-one sessions with a career advisor to work on career-related projects or questions of all levels. We’ll provide the candid feedback and support to level-up your job prospects.<br></p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div id="workshop"></div>
+                    <h3>Workshops Access<br></h3>
+                    <p>Access our collection of workshops that are available in-person . We’ll cover advanced topics of Web DEvelopment, Behavioral Interview Techniques &amp; Pay Negotiation.<br></p>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="process">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center" style="color:#ffffff;">OUR PROCESS</h3>
+                </div>
+                <div class="col-lg-12 d-xs-block d-sm-block d-md-none d-lg-none">
+                    <div id="process-img-vertical"></div>
+                </div>
+
+                <div class="col-lg-12 d-md-block d-lg-block d-none d-xs-none d-sm-none">
+                  <div id="process-img-horizontal"></div>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="achievement">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Our Achievements<br></h3>
+                    <p>Although over 80% of students have no prior experience in web development. On a national scale, 94% of our alumni land a job in 360 days after this one year course, with an average salary of 100000/- per year.<br></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 d-lg-block d-md-block d-none d-sm-none">
+                  <div id="accomplishments"></div>
+                </div>
+
+                <div class="col-lg-12 d-xs-block d-sm-block d-md-none d-lg-none">
+                  <div id="accomplishments-mobile"></div>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="videos-slider" class="d-lg-block d-none d-md-none d-sm-none">
+    <div class="row">
+            <div class="col" id="videos-title">
+                <h3>What our students say?</h3>
+            </div>
+        </div>
+    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row d-lg-inline-flex d-none d-md-none d-sm-none d-xs-none" id="videos-large">
+                    <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                        <div>
+                            <a href="https://www.youtube.com/watch?v=9y5AlAzoTL0" target="_blank"><div class="youtube-embed" id="lg-v1"></div></a>
+                            <div id="video-lg-text">
+                            <h3>Vvork student Testimonial</h3>
+                            <p><em>Usama Akram</em><br><br>“By the first month, you start to realize I can already build stuff... I didn’t get that in college.“</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+                        <div>
+                            <a href="https://www.youtube.com/watch?v=8d2pu7_pcDc" target="_blank"><div class="youtube-embed" id="lg-v2"></div></a>
+                            <div id="video-lg-text">
+                            <h3>Vvork students</h3>
+                            <p><em>M. Ahmad</em><br><br>“By the first month, you start to realize I can already build stuff... I didn’t get that in college.“</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+                        <div>
+                            <a href="https://www.youtube.com/watch?v=mLEHNtY8bwc" target="_blank"><div class="youtube-embed" id="lg-v3"></div></a>
+                            <div id="video-lg-text">
+                            <h3>Vvork arranges seminars</h3>
+                            <p><em>Iqra Abbas</em><br><br>“Vvork Cloud Arranged a seminar about CS and IT Students.“</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row d-lg-inline-flex d-none d-md-none d-sm-none d-xs-none" id="videos-large">
+                    <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                        <div>
+                            <a href="https://www.youtube.com/watch?v=2RXloh9-Z5k" target="_blank"><div class="youtube-embed" id="lg-v4"></div></a>
+                            <div id="video-lg-text">
+                            <h3>Student Review</h3>
+                            <p><em>Ali</em><br><br>“By the first month, you start to realize I can already build stuff... I didn’t get that in college.“</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+                        <div>
+                            <a href="https://www.youtube.com/watch?v=io62TNB9sMk" target="_blank"><div class="youtube-embed" id="lg-v5"></div></a>
+                            <div id="video-lg-text">
+                            <h3>Vvork Documentary</h3>
+                            <p><em>Shahid Khalid - CEO</em><br><br>“By the first month, you start to realize I can already build stuff... I didn’t get that in college.“</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+                        <div>
+                            <a href="https://www.youtube.com/watch?v=mxcBiV0thGs" target="_blank"><div class="youtube-embed" id="lg-v6"></div></a>
+                            <div id="video-lg-text">
+                            <h3>Vvork arranges seminars</h3>
+                            <p><em>Iqra Abbas</em><br><br>“Vvork Cloud Arranged a seminar about CS and IT Students.“</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<section id="student-review" class="d-md-block d-lg-none">
+        <div class="container">
+            <div class="row">
+                <div class="col" id="videos-title">
+                    <h3>What our students say?</h3>
+                </div>
+            </div>
+            <!-- <div class="row d-lg-inline-flex d-none d-md-none d-sm-none d-xs-none" id="videos-large">
+                <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=9y5AlAzoTL0" target="_blank"><div class="youtube-embed" id="lg-v1"></div></a>
+                        <div id="video-lg-text">
+                          <h3>Vvork student Testimonial</h3>
+                          <p><em>Usama Akram</em><br><br>“By the first month, you start to realize I can already build stuff... I didn’t get that in college.“</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=8d2pu7_pcDc" target="_blank"><div class="youtube-embed" id="lg-v2"></div></a>
+                        <div id="video-lg-text">
+                          <h3>Vvork students</h3>
+                          <p><em>M. Ahmad</em><br><br>“By the first month, you start to realize I can already build stuff... I didn’t get that in college.“</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=mLEHNtY8bwc" target="_blank"><div class="youtube-embed" id="lg-v3"></div></a>
+                        <div id="video-lg-text">
+                          <h3>Vvork arranges seminars</h3>
+                          <p><em>Iqra Abbas</em><br><br>“Vvork Cloud Arranged a seminar about CS and IT Students.“</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="row d-md-block d-none d-lg-none" id="videos-md">
+                <div class="col-md-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=9y5AlAzoTL0" target="_blank"><div class="youtube-embed" id="md-v1"></div></a>
+                        <div id="video-md-text">
+                          <h3>Vvork student Testimonial</h3>
+                          <p><em>Usama Akram</em><br><br>“By the first month, you start to realize I can already build stuff... I didn’t get that in college.“</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=8d2pu7_pcDc" target="_blank"><div class="youtube-embed" id="md-v2"></div></a>
+                        <div id="video-md-text">
+                          <h3>Vvork students</h3>
+                          <p><em>M. Ahmad</em><br><br>“By the first month, you start to realize I can already build stuff... I didn’t get that in college.“</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=mLEHNtY8bwc" target="_blank"><div class="youtube-embed" id="md-v3"></div></a>
+                        <div id="video-md-text">
+                          <h3>Vvork arranges seminars</h3>
+                          <p><em>Iqra Abbas</em><br><br>“Vvork Cloud Arranged a seminar about CS and IT Students.“</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=2RXloh9-Z5k" target="_blank"><div class="youtube-embed" id="md-v4"></div></a>
+                        <div id="video-md-text">
+                          <h3>Vvork students</h3>
+                          <p><em>Ali Hassan</em><br><br>“Vvork Cloud Arranged a seminar about CS and IT Students.“</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-sm-block d-none d-md-none d-lg-none" id="videos-sm">
+                <div class="col-sm-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=9y5AlAzoTL0" target="_blank"><div class="youtube-embed" id="sm-v1"></div></a>
+                        <div id="video-sm-text">
+                          <h3>Vvork student Testimonial</h3>
+                          <p><em>Usama Akram</em><br><br>“By the first month, you start to realize I can already build stuff... I didn’t get that in college.“</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=8d2pu7_pcDc" target="_blank"><div class="youtube-embed" id="sm-v2"></div></a>
+                        <div id="video-sm-text">
+                          <h3>Vvork students</h3>
+                          <p><em>M. Ahmad</em><br><br>“By the first month, you start to realize I can already build stuff... I didn’t get that in college.“</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=mLEHNtY8bwc" target="_blank"><div class="youtube-embed" id="sm-v3"></div></a>
+                        <div id="video-sm-text">
+                          <h3>Vvork arranges seminars</h3>
+                          <p><em>Iqra Abbas</em><br><br>“Vvork Cloud Arranged a seminar about CS and IT Students.“</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=2RXloh9-Z5k" target="_blank"><div class="youtube-embed" id="sm-v4"></div></a>
+                        <div id="video-sm-text">
+                          <h3>Vvork students</h3>
+                          <p><em>Ali Hassan</em><br><br>“Vvork Cloud Arranged a seminar about CS and IT Students.“</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-xs-block d-sm-none d-md-none d-lg-none" id="videos-xs">
+                <div class="col-xs-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=9y5AlAzoTL0" target="_blank"><div class="youtube-embed" id="sm-v1"></div></a>
+                        <div id="video-xs-text">
+                          <h3>Vvork student Testimonial</h3>
+                          <p><em>Usama Akram</em><br><br>“By the first month, you start to realize I can already build stuff... I didn’t get that in college.“</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=8d2pu7_pcDc" target="_blank"><div class="youtube-embed" id="sm-v2"></div></a>
+                        <div id="video-xs-text">
+                          <h3>Vvork students</h3>
+                          <p><em>M. Ahmad</em><br><br>“By the first month, you start to realize I can already build stuff... I didn’t get that in college.“</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=mLEHNtY8bwc" target="_blank"><div class="youtube-embed" id="sm-v3"></div></a>
+                        <div id="video-xs-text">
+                          <h3>Vvork arranges seminars</h3>
+                          <p><em>Iqra Abbas</em><br><br>“Vvork Cloud Arranged a seminar about CS and IT Students.“</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=2RXloh9-Z5k" target="_blank"><div class="youtube-embed" id="sm-v4"></div></a>
+                        <div id="video-xs-text">
+                          <h3>Vvork students</h3>
+                          <p><em>Ali Hassan</em><br><br>“Vvork Cloud Arranged a seminar about CS and IT Students.“</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<div id="team">
+        <div class="overlay">
+            <div class="container">
+                <div class="row d-none d-lg-block">
+                    <div class="col-lg-6 offset-3" id="team-header"> 
+                        <h2>Meet the Team</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row d-sm-block d-lg-none d-xl-none">
+                    <div class="col-lg-6" id="team-header"> 
+                        <h2>Meet the Team</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="row">
+                            <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="../../assets/img/team/03.png" alt="..." class="team-img">
+                                    <div class="caption">
+                                        <h3>Mohammad Faisal Yaha</h3>
+                                        <p> <strong>Chairman</strong> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="../../assets/img/team/01.png" alt="..." class="team-img">
+                                    <div class="caption">
+                                        <h3>Shahid Khalid</h3>
+                                        <p> <strong>CEO</strong> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="../../assets/img/team/02.png" alt="..." class="team-img">
+                                    <div class="caption">
+                                        <h3>Mohammad Shahzad</h3>
+                                        <p> <strong>Director</strong> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="row">
+                            <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="../../assets/img/team/04.png" alt="..." class="team-img">
+                                    <div class="caption">
+                                        <h3>M. Awais Qadri</h3>
+                                        <p> <strong>Student Assistent</strong> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="../../assets/img/team/05.png" alt="..." class="team-img">
+                                    <div class="caption">
+                                        <h3>Taimoor Munawar</h3>
+                                        <p> <strong>Student Assistent</strong> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="../../assets/img/team/06.png" alt="..." class="team-img">
+                                    <div class="caption">
+                                        <h3>Waqas Farooq</h3>
+                                        <p> <strong>Student Assistent</strong> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<section id="admission-process">
+        <div class="container">
+            <div class="row" id="ad-process-header">
+                <div class="col d-flex flex-column">
+                    <h3>Admission Process</h3>
+                    <p>The goal of admissions is to make sure you're ready for the challenges of the program, and that Vvork Cloud is the right fit for you. We look for motivation, how well you work with others, and perseverance.<br></p>
+                    <img src="../../assets/img/adminssion-process-horizontal.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 offset-4"><button class="btn btn-primary btn-block" type="button" id="register" [routerLink]="['/apply']">APPLY TODAY</button></div>
+            </div>
+        </div>
+</section>
+<section id="ceo">
+        <div class="container">
+            <div class="row d-none d-md-none d-sm-none d-lg-flex" id="ceo-lg">
+              <div class="col-lg-2">
+                <img src="../../assets/img/team/01.png" alt="Trophy scholarship" style="width: 200px;text-align: center;">
+              </div>
+                <div class="col-lg-10">
+                    <h4>Shahid Khalid <br> CEO</h4>
+                    <p>The whole process till today is worth it… I feel I’m part of something that you can actually see, and that’s rewarding. With the help of Vvork Cloud, I’m able to do what I do today.<br></p>
+                </div>
+            </div>
+            <div class="row d-none d-lg-none d-sm-none d-md-block" id="ceo-md">
+              <div class="col-md-12">
+                <img src="../../assets/img/team/01.png" alt="Trophy scholarship" style="width: 200px;text-align: center;">
+              </div>
+                <div class="col-md-12">
+                    <h4>Shahid Khalid <br> CEO</h4>
+                    <p>The whole process till today is worth it… I feel I’m part of something that you can actually see, and that’s rewarding. With the help of Vvork Cloud, I’m able to do what I do today.<br></p>
+                </div>
+            </div>
+            <div class="row d-none d-lg-none d-md-none d-sm-block" id="ceo-sm">
+              <div class="col-md-12">
+                <img src="../../assets/img/team/01.png" alt="Trophy scholarship" style="width: 200px;text-align: center;">
+              </div>
+                <div class="col-md-12">
+                    <h4>Shahid Khalid <br> CEO</h4>
+                    <p>The whole process till today is worth it… I feel I’m part of something that you can actually see, and that’s rewarding. With the help of Vvork Cloud, I’m able to do what I do today.<br></p>
+                </div>
+            </div>
+            <div class="row d-lg-none d-md-none d-sm-none d-xs-block" id="ceo-xs">
+              <div class="col-md-12">
+                <img src="../../assets/img/team/01.png" alt="Trophy scholarship" style="width: 200px;text-align: center;">
+              </div>
+                <div class="col-md-12">
+                    <h4>Shahid Khalid <br> CEO</h4>
+                    <p>The whole process till today is worth it… I feel I’m part of something that you can actually see, and that’s rewarding. With the help of Vvork Cloud, I’m able to do what I do today.<br></p>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="events">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center">Upcoming Events</h3>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Seminar Date</th>
+                                    <th>Deadline</th>
+                                    <th>Available Seats</th>
+                                    <th>Stack Taught</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="align-self-center">
+                                    <td>JUN 23, 2018 <br><p class="text-muted font-weight-normal">Saturday</p></td>
+                                    <td  class="text-dark font-weight-normal">Jun 30, 2018</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                                <span class="sr-only">70% Complete</span>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <p class="text-muted font-weight-light">30 seats left</p>
+                                    </td>
+                                    <td class="text-dark font-weight-normal">Full Stack Developer</td>
+                                </tr>
+                                <tr class="align-self-center">
+                                    <td>JUN 30, 2018 <br><span class="text-muted font-weight-normal">Saturday</span></td>
+                                    <td class="text-dark font-weight-normal">Jul 05, 2018</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                <span class="sr-only">80% Complete</span>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <span class="text-muted font-weight-light">20 seats left</span>
+                                    </td>
+                                    <td class="text-dark font-weight-normal">Full Stack Developer</td>
+                                </tr>
+                                <tr class="align-self-center">
+                                    <td>JUL 07, 2018 <br><span class="text-muted font-weight-normal">Saturday</span></td>
+                                    <td class="text-dark font-weight-normal">Jul 22, 2018</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                <span class="sr-only">80% Complete</span>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <span class="text-muted font-weight-light">20 seats left</span>
+                                    </td>
+                                    <td class="text-dark font-weight-normal">Full Stack Developer</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="scholarship">
+        <div class="container">
+            <div class="row d-none d-md-none d-sm-none d-lg-flex" id="scholar-lg">
+              <div class="col-lg-2">
+                <img src="../../assets/img/trophy.svg" alt="Trophy scholarship" style="width: 200px;text-align: center;">
+              </div>
+                <div class="col-lg-10">
+                    <h3 class="text-center">Scholarships</h3>
+                    <p>Vvork Cloud Technologies offer scholarships on the base of good performance. Scholarships can be applied for during your admissions process after submitting an application for your program.<br></p>
+                </div>
+            </div>
+            <div class="row d-none d-lg-none d-sm-none d-md-block" id="scholar-md">
+              <div class="col-md-12">
+                <img src="../../assets/img/trophy.svg" alt="Trophy scholarship" style="width: 200px;text-align: center;">
+              </div>
+                <div class="col-md-12">
+                    <h3 class="text-center">Scholarships</h3>
+                    <p>Vvork Cloud Technologies offer scholarships on the base of good performance. Scholarships can be applied for during your admissions process after submitting an application for your program.<br></p>
+                </div>
+            </div>
+            <div class="row d-none d-lg-none d-md-none d-sm-block" id="scholar-sm">
+              <div class="col-md-12">
+                <img src="../../assets/img/trophy.svg" alt="Trophy scholarship" style="width: 200px;text-align: center;">
+              </div>
+                <div class="col-md-12">
+                    <h3 class="text-center">Scholarships</h3>
+                    <p>Vvork Cloud Technologies offer scholarships on the base of good performance. Scholarships can be applied for during your admissions process after submitting an application for your program.<br></p>
+                </div>
+            </div>
+            <div class="row d-lg-none d-md-none d-sm-none d-xs-block" id="scholar-xs">
+              <div class="col-md-12">
+                <img src="../../assets/img/trophy.svg" alt="Trophy scholarship" style="width: 200px;text-align: center;">
+              </div>
+                <div class="col-md-12">
+                    <h3 class="text-center">Scholarships</h3>
+                    <p>Vvork Cloud Technologies offer scholarships on the base of good performance. Scholarships can be applied for during your admissions process after submitting an application for your program.<br></p>
+                </div>
+            </div>
+        </div>
+</section>
+<div class="footer-dark" id="contact">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a [ngx-scroll-to]="'career-service'">Career Services</a></li>
+                            <li><a [ngx-scroll-to]="'full-stack'">Full-stack Development Roadmap</a></li>
+                            <li><a [ngx-scroll-to]="'what'">Microsoft Certification</a></li>
+                            <li><a [ngx-scroll-to]="'campus-env'">Campus Environment</a></li>
+                            <li><a [ngx-scroll-to]="'student-review'">Student Reviews</a></li>
+                            <li><a [ngx-scroll-to]="'why'">Why Choose Us</a></li>
+                            <li><a [routerLink]="['/apply']">Apply</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a [ngx-scroll-to]="'intro'">Company</a></li>
+                            <li><a [ngx-scroll-to]="'team'">Team</a></li>
+                            <li><a [ngx-scroll-to]="'events'">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Vvork Cloud Technologies</h3>
+                        <p class="text-left"><br>Paradise 1, office #64-65-66, Floor 1 Office #5, Floor 2 Office #4 I.T Tower Near Hafeez Center, lahore.<br>Cell: 0300-6761319 , 0303-4216625<br>Email: cvvork@gmail.com<br></p>
+                    </div>
+                    <div class="col item social">
+                      <a href="https://facebook.com/vvorkCloudtech/"><i class="icon ion-social-facebook"></i></a>
+                      <a href="#"><i class="icon ion-social-twitter"></i></a>
+                      <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                      <a href="#"><i class="icon ion-social-instagram"></i></a>
+                    </div>
+                </div>
+                <p class="copyright">Vvork Cloud Technologies © 2018</p>
+            </div>
+        </footer>
+</div>

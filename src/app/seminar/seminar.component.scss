@@ -1,0 +1,19 @@
+#seminar-section {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right top, #a62a96, #776bd6, #009af6, #00bff7, #1fdee7);
+}
+textarea#inputMessage {
+    border-radius: 3%;
+}
+
+// #495057
+
+#inputMessage::placeholder {
+    color: #495057;
+    font-size: 1rem;
+}
+
+select#inputDate {
+    border-radius: 20px;
+}

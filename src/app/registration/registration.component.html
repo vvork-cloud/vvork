@@ -1,0 +1,148 @@
+<section class="d-flex flex-column justify-content-between" id="main">
+    <div id="main-top">
+        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" [routerLink]="['/index']" style="background-image:url(&quot;assets/img/logo-white.png&quot;);width:150px;background-position:center;background-size:contain;background-repeat:no-repeat;height:50px;"></a>
+                <button class="navbar-toggler" (click)="isCollapsed = !isCollapsed" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
+                    <ul class="nav navbar-nav d-lg-flex align-items-center ml-auto">
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">Home</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">About</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">Training Roadmap</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">Certification</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">Career Service</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">Team</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">Events</a></li>
+                        <!-- <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/seminar']">Attend Seminar</a></li> -->
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/contact']">Contact</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation">
+                            <a class="nav-link" [routerLink]="['/seminar']">
+                                <button class="btn btn-primary nav-apply-btn">Seminar</button>
+                            </a>
+                        </li>
+                        <li class="nav-item align-middle h-100" role="presentation">
+                            <a class="nav-link" [routerLink]="['/apply']">
+                                <button class="btn btn-primary nav-apply-btn">Apply</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<div class="container" id="reg-body">
+  <div class="row">
+    <div class="col-lg-6 offest-6 d-sm-block ">
+      <div id="sidebar">
+        <img src="../../assets/img/apply-lg.png" alt="">
+      </div>
+    </div>
+    <!-- <div class="col-lg-6 offest-6 d-xs-block d-md-none d-lg-none">
+      <div id="sidebar">
+        <img src="../../assets/img/apply-sm.png" alt="">
+      </div>
+    </div> -->
+    <div class="col-sm-12 col-md-12 col-lg-6 mx-auto">
+      <div class="card card-signin my-5">
+        <div class="card-body">
+          <h5 class="card-title text-center">Register</h5>
+          <form class="form-signin" [formGroup]="registerFormGroup">
+
+            <div class="form-label-group">
+              <input type="text" id="inputFirstName" class="form-control" placeholder="First Name" autofocus formControlName="firstName">
+              <label for="inputFirstName">First Name</label>
+              <span class="error-message text text-danger" *ngIf="(registerFormGroup.get('firstName').touched || 
+                                                                    registerFormGroup.get('firstName').dirty) && 
+                                                                    registerFormGroup.get('firstName').errors">
+                <span *ngIf="registerFormGroup.get('firstName').errors.minlength">
+                  The first name must be longer than 5 characters.
+                </span>
+              </span>
+            </div>
+
+            <div class="form-label-group">
+              <input type="text" id="inputLastName" class="form-control" placeholder="Last Name" autofocus formControlName="lastName">
+              <label for="inputLastName">Last Name</label>
+            </div>
+
+            <div class="form-label-group">
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus formControlName="email">
+              <label for="inputEmail">Email address</label>
+              <span class="error-message text text-danger" *ngIf="(registerFormGroup.get('email').touched || 
+                                                                    registerFormGroup.get('email').dirty) && 
+                                                                    registerFormGroup.get('email').errors">
+                <span *ngIf="registerFormGroup.get('email').errors.pattern">
+                  Invalid email address
+                </span>
+              </span>
+            </div>
+
+            <div class="form-label-group">
+              <input type="text" id="inputPhone" class="form-control" placeholder="Phone Number" autofocus formControlName="phone">
+              <label for="inputPhone">Phone Number</label>
+              <span class="error-message text text-danger" *ngIf="(registerFormGroup.get('phone').touched || 
+                                                                    registerFormGroup.get('phone').dirty) && 
+                                                                    registerFormGroup.get('phone').errors">
+                <span *ngIf="registerFormGroup.get('phone').errors.required">
+                  Please enter your phone.
+                </span>
+                <span *ngIf="registerFormGroup.get('phone').errors.pattern">
+                  Invalid number.
+                </span>
+              </span>
+            </div>
+
+            <div class="form-label-group">
+              <input type="email" id="inputAddress" class="form-control" placeholder="Address" autofocus formControlName="address">
+              <label for="inputAddress">Address</label>
+            </div>
+
+            <div class="form-label-group">
+              <input type="email" id="inputCollege" class="form-control" placeholder="College/University" autofocus formControlName="college">
+              <label for="inputCollege">College/University</label>
+            </div>
+
+            <!-- <div class="form-label-group">
+              <input type="email" id="inputEducation" class="form-control" placeholder="Qualification" autofocus formControlName="qualification">
+              <label for="inputEducation">Qualification</label>
+            </div> -->
+
+            <div class="form-label-group">
+              <select name="" id="inputDate" class="form-control" formControlName="qualification">
+                <option *ngFor="let value of qualification" [ngValue]="value">{{value.value}}</option>
+              </select>
+            </div>
+            
+            <div class="form-group radio" formGroupName="shift">
+              <label class="radio-label">
+                <input class="radio-inline" type="radio" name="value" value="morning" formControlName="value">Morning</label>
+              <label class="radio-label">
+                <input class="radio-inline" type="radio" name="value" value="noon" formControlName="value">Afternoon</label>
+              <label class="radio-label">
+                <input class="radio-inline" type="radio" name="value" value="evening" formControlName="value">Evening</label>
+            </div>
+
+            <div class="form-label-group">
+              <input type="text" id="inputMessage" class="form-control" placeholder="Message" formControlName="message">
+              <label for="inputMessage">Message</label>
+            </div>
+
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" (click)="onSubmit()" [disabled]="!registerFormGroup.valid">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p>
+      <a [routerLink]="['/index']" >www.vvorkcloud.com</a>
+    </p>
+  </div>
+</footer>

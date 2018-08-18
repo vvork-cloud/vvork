@@ -1,0 +1,83 @@
+#reg-body {
+  padding: 50px 0px;
+}
+a.navbar-brand {
+  cursor: pointer;
+}
+a.nav-link {
+  cursor: pointer;
+}
+a.nav-link:hover {
+  color: white !important; 
+}
+
+select#inputDate {
+    border-radius: 20px;
+}
+
+.nav-apply-btn {
+  border-radius: 25px;
+}
+
+#reg-form-head {
+  padding: 32px 0px;
+}
+
+#logo {
+  width: 170px;
+  margin-right: 40px;
+  margin-bottom: 5px;
+}
+
+.footer {
+  width: auto;
+  background-color: #007bff;
+  line-height: 60px;
+}
+
+p {
+  color: white;
+  margin-bottom: 0rem;
+}
+
+#header-text {
+  display: inline;
+}
+
+input.radio-inline {
+  margin-right: 5px;
+  margin-left: 30px;
+}
+
+div#sidebar {
+  text-align: center;
+  padding-top: 48px;
+}
+
+div#sidebar img {
+  width: 502px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+@media (max-width: 769px) {
+  div#sidebar img {
+    width: 674px;
+  }
+}
+@media (max-width: 389px) {
+  div#sidebar {
+    padding-top: 20px;
+  }
+
+  div#sidebar img {
+    width: 336px;
+  }
+}

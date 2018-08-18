@@ -1,0 +1,880 @@
+#main {
+  background-image:url("../../assets/img/main-mobile.png");
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  width:100%;
+  height:100vh;
+}
+
+
+/* Styling Anchor Points in Header*/
+
+#main-top,#contact  li a, a.navbar-brand {
+  cursor: pointer;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+
+@media only screen and (min-width: 768px){
+  section#main, #intro, #full-stack, #career-service, #what, #admission-process {
+    padding-top: 120px !important;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  div#team {
+    padding-top: 60px !important;
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+  div#contact {
+    padding-top: 60px !important;
+  }
+}
+
+@media only screen and (max-width: 667px){
+  section#main, #intro, #full-stack, #career-service, #what, #admission-process {
+    padding-top: 80px !important;
+  }
+}
+
+.nav-apply-btn {
+  border-radius: 25px;
+}
+
+
+@media (min-width: 768px) {
+  #main {
+    background-image:url("../../assets/img/main.png");
+  }
+}
+
+
+#navcol {
+  font-size:15px;
+  color:rgb(0,0,0);
+  font-family:Montserrat, sans-serif;
+  font-weight:normal;
+}
+
+#head-title {
+  font-size:18px;
+  font-family:Montserrat, sans-serif;
+  padding:10px;
+  margin-top:10px;
+}
+
+#cert-title {
+  font-size:18px;
+  font-weight:bold;
+  margin-top:-34px;
+}
+
+#register {
+  /*border:2px solid white;*/
+  border-radius:30px;
+  background-color:#007bff;
+}
+
+#main-bottom {
+  margin-bottom:20px;
+}
+
+@media (min-width: 768px) {
+  #head-title {
+    font-size:22px;
+    padding-right:65px;
+    padding-left:65px;
+    margin-top:15px;
+  }
+}
+
+@media (min-width: 768px) {
+  #cert-title {
+    margin-top:-43px;
+    font-size:24px;
+  }
+}
+
+@media (min-width: 992px) {
+  #head-title {
+    margin-top:-7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #head-title {
+    margin-top:58px;
+  }
+}
+
+/* VIDEO CENTERING */
+
+.youtube-embed {
+  text-align:center;
+}
+
+#lg-v1{
+  height: 170px;
+  background-image: url("../../assets/img/videos-img/lg-v1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#lg-v2{
+  height: 170px;
+  background-image: url("../../assets/img/videos-img/lg-v2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#lg-v3{
+  height: 170px;
+  background-image: url("../../assets/img/videos-img/lg-v3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#lg-v4{
+  height: 170px;
+  background-image: url("../../assets/img/videos-img/lg-v4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#lg-v5{
+  height: 170px;
+  background-image: url("../../assets/img/videos-img/lg-v5.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#lg-v6{
+  height: 170px;
+  background-image: url("../../assets/img/videos-img/lg-v6.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+#md-v1{
+  width: 560px;
+  height: 315px;
+  background-image: url("../../assets/img/videos-img/md-v1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#md-v2{
+  width: 560px;
+  height: 315px;
+  background-image: url("../../assets/img/videos-img/md-v2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#md-v3{
+  width: 560px;
+  height: 315px;
+  background-image: url("../../assets/img/videos-img/md-v3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#md-v3{
+  width: 560px;
+  height: 315px;
+  background-image: url("../../assets/img/videos-img/md-v3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#md-v4{
+  width: 560px;
+  height: 315px;
+  background-image: url("../../assets/img/videos-img/md-v4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+#sm-v1{
+  height: 189px;
+  background-image: url("../../assets/img/videos-img/sm-v1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#sm-v2{
+  height: 189px;
+  background-image: url("../../assets/img/videos-img/sm-v2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#sm-v3{
+  height: 189px;
+  background-image: url("../../assets/img/videos-img/sm-v3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#sm-v4{
+  height: 189px;
+  background-image: url("../../assets/img/videos-img/sm-v4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* COMPANY INTRO PARA FONT SIZE */
+
+#company-intro p {
+  font-size:16px;
+}
+
+
+
+
+/***************************************  
+        INTRO-CONTAINER & VIDEO
+****************************************/
+
+#intro-container {
+  width:100%;
+  height:100%;
+}
+
+#intro {
+  background-color: #f4f4f4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#intro-container iframe {
+  -webkit-box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+
+#company-intro p {
+  text-align: justify;
+}
+
+/***************************************  
+                GETTOS
+****************************************/
+
+#gettos {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #505170;
+  color: #ffffff;
+}
+
+
+@media (min-width: 1200px) {
+  #gettos .col-lg-3:not(:last-child) {
+    border-right:10px ridge #ffffff;
+  }
+
+}
+.intro-bottom h3 {
+  font-size:16px;
+}
+
+.intro-bot-para {
+  font-size:14px;
+  text-align: justify;
+}
+
+/***************************************  
+          FULL-STACK ROADMAP
+****************************************/
+
+#full-stack {
+  width:100%;
+  height:100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color:#f4f4f4;
+  text-align: center;
+}
+
+/***************************************  
+          WHY CHOOSE US
+****************************************/
+
+#why {
+  width:100%;
+  height:100%;
+  background-color:#505170;
+  color:rgb(255,255,255);
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+#why p {
+  text-align: justify;
+}
+
+/***************************************  
+          WHATS
+****************************************/
+#what {
+  width:100%;
+  height:100%;
+  background-color:#414045;
+  color:rgb(255,255,255);
+}
+
+#banner {
+  background-image:url("../../assets/img/mcsa-banner.png");
+  background-position:left;
+  background-size:contain;
+  background-repeat:no-repeat;
+  height:73px;
+  width:100%;
+  /*text-align:right;*/
+}
+
+@media (min-width: 768px) {
+  #banner {
+    background-image:url("../../assets/img/mcsa-banner.png");
+    background-position:left;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100%;
+    height:149px;
+  }
+}
+
+@media (min-width: 992px) {
+  #banner {
+    background-image:url("../../assets/img/mcsa-banner.png");
+    background-position:left;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100%;
+    /*text-align:right;*/
+    height:178px;
+    margin-top:3px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #banner {
+    background-image:url("../../assets/img/mcsa-banner.png");
+    background-position:left;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100%;
+    /*text-align:right;*/
+    height:228px;
+    margin-top:3px;
+  }
+}
+
+#mcsa-col {
+  padding-right:0px;
+  padding-left:0px;
+}
+
+@media (min-width: 768px) {
+  #mcsa-matter {
+    font-size:16px;
+  }
+}
+
+#mcsa-matter {
+  font-size:14px;
+  padding-left: 24px;
+}
+
+thead {
+  background-color:#505170;
+  color:#ffffff;
+  /*background-position:right;*/
+  text-align:center;
+  font-size:10px;
+}
+
+tbody {
+  color:#007bff;
+  font-size:11px;
+  letter-spacing:0px;
+  font-family:Montserrat, sans-serif;
+  font-weight:bold;
+  text-align:center;
+}
+
+@media (min-width: 768px) {
+  thead {
+    font-size:16px;
+  }
+}
+
+@media (min-width: 768px) {
+  tbody {
+    font-size:17px;
+    text-align:center;
+  }
+}
+
+
+/***************************************  
+          CAMPUS ENVIRONMENT
+****************************************/
+
+
+#campus-env {
+  width:100%;
+  height:100%;
+  background-color:#ffffff;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+
+/***************************************  
+          TABINATION
+****************************************/
+
+#tabs {
+  width:100%;
+  height:100vh;
+  background-color:#007bff;
+}
+
+
+/***************************************  
+          CAREER SERVICES
+****************************************/
+
+
+#career-service {
+  width:100%;
+  height:100%;
+  background-color:#f4f4f4;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#career-service #core p{
+  text-align: justify;
+}
+#career-service #types p{
+  text-align: justify;
+}
+
+#one-to-one {
+  background-image:url("../../assets/img/involved.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  width:100px;
+  height:100px;
+  border-radius:100px;
+  /*border:2px solid #555;*/
+  background-size:contain;
+}
+
+#workshop {
+  width:100px;
+  height:100px;
+  background-image:url("../../assets/img/workshop.jpg");
+  border-radius:100px;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+}
+
+
+
+/***************************************  
+          PROCESS
+****************************************/
+#process {
+  width:100%;
+  height:100%;
+  background-color:#505170;
+  padding-top:30px;
+  padding-top:30px;
+}
+
+#process-img-vertical {
+  background-image:url("../../assets/img/process.png");
+  width:100%;
+  height:536px;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+#process-img-horizontal {
+  background-image:url("../../assets/img/process-horizontal.png");
+  width:100%;
+  height:500px;
+  margin-top: -50px;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+
+
+/***************************************  
+          ACHIEVEMENT
+****************************************/
+
+
+
+#achievement {
+  width:100%;
+  height:100%;
+  background-color:#f4f4f4;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+#achievement p{
+  text-align: justify
+}
+
+#accomplishments {
+  background-image: url('../../assets/img/accomplishments.png');
+  height: 100px;
+  background-size: contain;
+  width: 100%;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+}
+#accomplishments-mobile {
+  background-image: url('../../assets/img/accomplishments-mobile.png');
+  height: 100px;
+  background-size: contain;
+  width: 100%;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+}
+
+
+/***************************************  
+          STUDENTS REVIEW
+****************************************/
+#student-review {
+  width:100%;
+  height:100%;
+  background-color:#ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#videos-large {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#video-lg-text {
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 351px;
+    height: 190px;
+    margin-top: -6px;
+}
+
+
+/* Medium Devices Videos */
+
+#video-md-text {
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 560px;
+}
+
+#videos-md .col-md-12 {
+    margin-bottom: 30px;
+}
+/* Medium Devices Videos */
+
+#video-sm-text {
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 480px;
+    margin-left: 15px;
+    margin-top: -6px;
+}
+
+#videos-sm .col-sm-12 {
+    margin-bottom: 30px;
+}
+
+#video-xs-text {
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 336px;
+    margin-left: 0px;
+    margin-top: -6px;
+}
+
+#videos-xs .col-xs-12 {
+    margin-bottom: 30px;
+}
+div#videos-xs {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 20px;
+}
+
+/***************************************  
+          SCHOLARSHIPS
+****************************************/
+#scholarship {
+  width:100%;
+  height:100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#scholarship .col-lg-10 {
+    padding-left: 56px;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+#scholarship #scholar-md {
+  text-align: center;
+  font-size: 20px;
+}
+#scholarship #scholar-md img{
+  margin-bottom: 15px;
+}
+
+
+#scholarship #scholar-sm {
+  text-align: center;
+  font-size: 20px;
+}
+#scholarship #scholar-sm img{
+  margin-bottom: 15px;
+  height: 150px;
+}
+
+
+#scholarship #scholar-xs {
+  text-align: center;
+  font-size: 15px;
+}
+#scholarship #scholar-xs img{
+  margin-bottom: 15px;
+  height: 150px;
+}
+
+
+
+
+
+
+
+
+
+#student-review #videos-title h3 {
+  text-align: center;
+}
+
+
+/***************************************  
+            ADMISSION PROCESS
+****************************************/
+
+
+#admission-process {
+  width:100%;
+  height:100%;
+  padding-top:50px;
+  padding-bottom:50px;
+  text-align: center;
+}
+#ad-process-header p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+#ad-process-header img {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+/***************************************  
+                  CEO
+****************************************/
+
+#ceo {
+  width:100%;
+  height:100%;
+  background-color:#505170;
+  color:#ffffff;
+  padding-top:50px;
+  padding-bottom:50px;
+  text-align: center;
+}
+
+#ceo img {
+  border-radius: 100%;
+}
+
+#ceo .col-lg-10 {
+    padding-left: 56px;
+    text-align: center;
+}
+
+
+#ceo #ceo-lg {
+  text-align: center;
+  font-size: 20px;
+}
+
+#ceo #ceo-md {
+  text-align: center;
+  font-size: 16px;
+}
+#ceo #ceo-md img{
+  margin-bottom: 15px;
+}
+
+
+#ceo #ceo-sm {
+  text-align: center;
+  font-size: 20px;
+}
+#ceo #ceo-sm img{
+  margin-bottom: 15px;
+  height: 200px;
+}
+
+
+#ceo #ceo-xs {
+  text-align: center;
+  font-size: 15px;
+}
+#ceo #ceo-xs img{
+  margin-bottom: 15px;
+  height: 200px;
+}
+
+
+/***************************************  
+            VIDEOS SLIDER 
+****************************************/
+
+#videos-slider {
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 60px 0px;
+}
+#videos-slider .row {
+  margin-right: 0px;
+}
+#videos-slider #videos-title {
+  text-align: center;
+}
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: block;
+    margin-left: 118px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../../assets/img/arrow.svg");
+  width: 50px;
+  height: 50px;
+  margin-left: 25px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../../assets/img/arrow.svg");
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+  transform: rotate(180deg);
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 8%;
+}
+
+
+
+/***************************************  
+                  TEAM 
+****************************************/
+@media screen and (min-width: 768px) {
+  #team .col-lg-4 {
+    float: left;
+    text-align: center;
+  }
+}
+
+#team {
+  color: #fff;
+  background: rgba(167, 196, 76, 0.9);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+#team .overlay {
+  padding: 30px 0px;
+}
+#team h2, #team p {
+	color: #000000;
+}
+#team hr {
+	background: #000000;
+}
+#team h3 {
+	color: #000000;
+	font-weight: 500;
+	font-size: 20px;
+	margin: 5px 0;
+}
+#team .team-img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50px 0 50px 0;
+	box-shadow: 15px 0 #96b044;
+}
+#team .thumbnail {
+	background: transparent;
+	border: 0;
+}
+#team .thumbnail .caption {
+	padding-top: 10px;
+}
+#team .thumbnail .caption p {
+	color: #fff;
+}
+
+
+#events {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding:80px 0px;
+}
+
+
+#events tbody tr {
+  background-color: white;
+}
+
+#events .text-muted {
+  font-size: 12px;
+}
+
+.progress {
+  height: 8px !important;
+}
