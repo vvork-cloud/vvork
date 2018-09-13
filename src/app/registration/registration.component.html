@@ -9,13 +9,13 @@
                 </button>
                 <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
                     <ul class="nav navbar-nav d-lg-flex align-items-center ml-auto">
-                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">Home</a></li>
-                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">About</a></li>
-                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">Training Roadmap</a></li>
-                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">Certification</a></li>
-                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">Career Service</a></li>
-                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">Team</a></li>
-                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/index']">Events</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">Home</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">About</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">Training Roadmap</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">Certification</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">Career Service</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">Team</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">Events</a></li>
                         <!-- <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/seminar']">Attend Seminar</a></li> -->
                         <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/contact']">Contact</a></li>
                         <li class="nav-item align-middle h-100" role="presentation">
@@ -51,15 +51,17 @@
       <div class="card card-signin my-5">
         <div class="card-body">
           <h5 class="card-title text-center">Register</h5>
-          <form class="form-signin" [formGroup]="registerFormGroup">
+          <form class="form-signin" [formGroup]="applicationsFormGroup">
+
+            <input type="hidden" formControlName='$key'>
 
             <div class="form-label-group">
               <input type="text" id="inputFirstName" class="form-control" placeholder="First Name" autofocus formControlName="firstName">
               <label for="inputFirstName">First Name</label>
-              <span class="error-message text text-danger" *ngIf="(registerFormGroup.get('firstName').touched || 
-                                                                    registerFormGroup.get('firstName').dirty) && 
-                                                                    registerFormGroup.get('firstName').errors">
-                <span *ngIf="registerFormGroup.get('firstName').errors.minlength">
+              <span class="error-message text text-danger" *ngIf="(applicationsFormGroup.get('firstName').touched ||
+                                                                    applicationsFormGroup.get('firstName').dirty) &&
+                                                                    applicationsFormGroup.get('firstName').errors">
+                <span *ngIf="applicationsFormGroup.get('firstName').errors.minlength">
                   The first name must be longer than 5 characters.
                 </span>
               </span>
@@ -73,10 +75,10 @@
             <div class="form-label-group">
               <input type="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus formControlName="email">
               <label for="inputEmail">Email address</label>
-              <span class="error-message text text-danger" *ngIf="(registerFormGroup.get('email').touched || 
-                                                                    registerFormGroup.get('email').dirty) && 
-                                                                    registerFormGroup.get('email').errors">
-                <span *ngIf="registerFormGroup.get('email').errors.pattern">
+              <span class="error-message text text-danger" *ngIf="(applicationsFormGroup.get('email').touched ||
+                                                                    applicationsFormGroup.get('email').dirty) &&
+                                                                    applicationsFormGroup.get('email').errors">
+                <span *ngIf="applicationsFormGroup.get('email').errors.pattern">
                   Invalid email address
                 </span>
               </span>
@@ -85,13 +87,13 @@
             <div class="form-label-group">
               <input type="text" id="inputPhone" class="form-control" placeholder="Phone Number" autofocus formControlName="phone">
               <label for="inputPhone">Phone Number</label>
-              <span class="error-message text text-danger" *ngIf="(registerFormGroup.get('phone').touched || 
-                                                                    registerFormGroup.get('phone').dirty) && 
-                                                                    registerFormGroup.get('phone').errors">
-                <span *ngIf="registerFormGroup.get('phone').errors.required">
+              <span class="error-message text text-danger" *ngIf="(applicationsFormGroup.get('phone').touched ||
+                                                                    applicationsFormGroup.get('phone').dirty) &&
+                                                                    applicationsFormGroup.get('phone').errors">
+                <span *ngIf="applicationsFormGroup.get('phone').errors.required">
                   Please enter your phone.
                 </span>
-                <span *ngIf="registerFormGroup.get('phone').errors.pattern">
+                <span *ngIf="applicationsFormGroup.get('phone').errors.pattern">
                   Invalid number.
                 </span>
               </span>
@@ -117,7 +119,7 @@
                 <option *ngFor="let value of qualification" [ngValue]="value">{{value.value}}</option>
               </select>
             </div>
-            
+
             <div class="form-group radio" formGroupName="shift">
               <label class="radio-label">
                 <input class="radio-inline" type="radio" name="value" value="morning" formControlName="value">Morning</label>
@@ -132,7 +134,7 @@
               <label for="inputMessage">Message</label>
             </div>
 
-            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" (click)="onSubmit()" [disabled]="!registerFormGroup.valid">Submit</button>
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" (click)="onSubmit()" [disabled]="!applicationsFormGroup.valid">Submit</button>
           </form>
         </div>
       </div>

@@ -1,0 +1,16 @@
+<nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+    <div class="container-fluid">
+        <a class="navbar-brand"></a>
+        <button class="navbar-toggler" (click)=showNav($event) aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav d-lg-flex align-items-center ml-auto">
+            <li class="nav-item align-middle h-100" role="presentation">
+                <a class="nav-link" (click)="callAll($event)"><i class="fas fa-sign-out-alt"></i>Logout</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav>

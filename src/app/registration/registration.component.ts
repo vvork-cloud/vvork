@@ -15,13 +15,13 @@ import { RegistraionService } from '../shared/registration.service';
 export class RegistrationComponent implements OnInit {
 
   isCollapsed: boolean = false;
-  registerFormGroup: FormGroup;
+  applicationsFormGroup: FormGroup;
   qualification = [
-    {id: 0, value: "Qualification"},
-    {id: 1, value: "Matric"},
-    {id: 2, value: "Intermediate"},
-    {id: 3, value: "Graduation"},
-    {id: 4, value: "Masters"}
+    { id: 0, value: "Qualification" },
+    { id: 1, value: "Matric" },
+    { id: 2, value: "Intermediate" },
+    { id: 3, value: "Graduation" },
+    { id: 4, value: "Masters" }
   ]
   constructor(private formBuilder: FormBuilder, private regService: RegistraionService, private router: Router, private spinner: NgxSpinnerService, private toastr: ToastrService) {
     // db.list('/registrations').valueChanges().subscribe((data:any) => {
@@ -32,7 +32,9 @@ export class RegistrationComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.registerFormGroup = this.formBuilder.group({
+    this.isCollapsed = true;
+    this.applicationsFormGroup = this.formBuilder.group({
+      $key: ['null'],
       firstName: ['', [Validators.minLength(5)]],
       lastName: ['',],
       email: ['', [Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+')]],
@@ -46,21 +48,35 @@ export class RegistrationComponent implements OnInit {
       message: ['']
     });
 
-    this.regService.getData().valueChanges().subscribe();
-    // this.regService.getData().valueChanges().subscribe(data => { console.log(data) });
+    this.regService.getApplicantsList();
   }
 
+  hideNav(event) {
+    event.preventDefault();
+    this.isCollapsed = true;
+  }
+
+
   onSubmit() {
-    let user = this.registerFormGroup.value;
-    // console.log('Data', user);
-    if (!this.registerFormGroup.valid) {
+    let applicantData = {
+      firstName: this.applicationsFormGroup.get('firstName').value,
+      lastName: this.applicationsFormGroup.get('lastName').value,
+      email: this.applicationsFormGroup.get('email').value,
+      phone: this.applicationsFormGroup.get('phone').value,
+      address: this.applicationsFormGroup.get('address').value,
+      college: this.applicationsFormGroup.get('college').value,
+      qualification: this.applicationsFormGroup.get('qualification').value,
+      shift: this.applicationsFormGroup.get('shift').value,
+      message: this.applicationsFormGroup.get('message').value
+    };
+    if (!this.applicationsFormGroup.valid) {
       alert('Invalid form');
-    } else {
+    } else if (this.applicationsFormGroup.get('$key').value == 'null') {
       this.toastr.success('Application submitted successfully!', '', { easeTime: 300, timeOut: 3000, positionClass: 'toast-top-center', progressBar: true, progressAnimation: 'increasing' });
       // debugger;
-      this.regService.insertEmployee(user);
+      this.regService.inserApplication(applicantData);
       // debugger;
-      this.registerFormGroup.reset();
+      this.applicationsFormGroup.reset();
       this.router.navigate(['/index']);
     }
   }

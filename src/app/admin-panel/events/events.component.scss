@@ -1,0 +1,23 @@
+.app-section {
+// background-color: #ff00006e;
+position: relative;
+left: 239px;
+top: 59px;
+width: 1100px;
+height: 550px;
+}
+
+.event-form {
+    width: 380px;
+    background-color: #ffc107de;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+tbody td i {
+    cursor: pointer;
+}
+
+#form-group button {
+    margin-top: 15px;
+    width: 100%;
+}

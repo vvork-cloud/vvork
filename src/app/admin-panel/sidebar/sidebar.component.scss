@@ -1,0 +1,29 @@
+#sticky-sidebar {
+    position:fixed;
+    z-index: 1000;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    padding-top: 70px;
+    background-color: rgb(70, 69, 69);
+}
+
+.nav-items {
+    height: 50px;
+    padding-left: 35px;
+}
+.nav-items a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.col-12:hover {
+    cursor: pointer;
+    background-color:#555;
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+}
+
+.active {
+  background-color: #555;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}

@@ -1,3 +1,39 @@
+<section class="d-flex flex-column justify-content-between" id="main">
+    <div id="main-top">
+        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" [routerLink]="['/index']" style="background-image:url(&quot;assets/img/logo-white.png&quot;);width:150px;background-position:center;background-size:contain;background-repeat:no-repeat;height:50px;"></a>
+                <button class="navbar-toggler" (click)="isCollapsed = !isCollapsed" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
+                    <ul class="nav navbar-nav d-lg-flex align-items-center ml-auto">
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">Home</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">About</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">Training Roadmap</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">Certification</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">Career Service</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">Team</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" (click)="hideNav($event)" [routerLink]="['/index']">Events</a></li>
+                        <!-- <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/seminar']">Attend Seminar</a></li> -->
+                        <li class="nav-item align-middle h-100" role="presentation"><a class="nav-link" [routerLink]="['/contact']">Contact</a></li>
+                        <li class="nav-item align-middle h-100" role="presentation">
+                            <a class="nav-link" [routerLink]="['/seminar']">
+                                <button class="btn btn-primary nav-apply-btn">Seminar</button>
+                            </a>
+                        </li>
+                        <li class="nav-item align-middle h-100" role="presentation">
+                            <a class="nav-link" [routerLink]="['/apply']">
+                                <button class="btn btn-primary nav-apply-btn">Apply</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
 <section id="seminar-section">
   <div class="container">
     <div class="row">
@@ -6,6 +42,9 @@
           <div class="card-body">
             <h5 class="card-title text-center">Attend A Seminar</h5>
             <form class="form-signin" [formGroup]="contactForm">
+              <!-- HIDDEN KEY INPUT-->
+              <input type="hidden" formControlName="$key">
+
               <div class="form-label-group">
                 <input type="text" id="inputName" class="form-control" placeholder="Name" autofocus formControlName="name">
                 <label for="inputName">Name</label>
@@ -19,8 +58,8 @@
               <div class="form-label-group">
                 <input type="text" id="inputPhone" class="form-control" placeholder="Phone Number" formControlName="phone">
                 <label for="inputPhone">Phone Number</label>
-                <span class="error-message text text-danger" *ngIf="(contactForm.get('phone').touched || 
-                                                                                    contactForm.get('phone').dirty) && 
+                <span class="error-message text text-danger" *ngIf="(contactForm.get('phone').touched ||
+                                                                                    contactForm.get('phone').dirty) &&
                                                                                     contactForm.get('phone').errors">
                   <span *ngIf="contactForm.get('phone').errors.required">
                     Please enter your phone.
@@ -30,11 +69,6 @@
                   </span>
                 </span>
               </div>
-
-              <!-- <div class="form-label-group">
-                <input type="text" id="inputQualification" class="form-control" placeholder="Qualification" formControlName="qualification">
-                <label for="inputQualification">Qualification</label>
-              </div> -->
 
               <div class="form-label-group">
                 <select name="" id="inputDate" class="form-control" formControlName="qualification">
@@ -67,3 +101,10 @@
     </div>
   </div>
 </section>
+<footer class="footer">
+  <div class="container">
+    <p>
+      <a [routerLink]="['/index']">www.vvorkcloud.com</a>
+    </p>
+  </div>
+</footer>

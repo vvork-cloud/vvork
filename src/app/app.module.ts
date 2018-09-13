@@ -20,6 +20,10 @@ import { SharedModule } from './features/shared.module';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { SeminarComponent } from './seminar/seminar.component';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { DashboardModule } from './admin-panel/dashboard.module';
+import { AdminModule } from './admin-panel/admin.module';
+import { AuthService } from './admin-panel/core/auth.service';
+import { AuthGuard } from './admin-panel/core/auth.guard';
 
 
 @NgModule({
@@ -41,16 +45,17 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     ScrollToModule.forRoot(),
     NgbModule.forRoot(),
     NgbCollapseModule.forRoot(),
-    NgxSpinnerModule,
     ToastrModule.forRoot(),
     ToastNoAnimationModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DashboardModule,
+    AdminModule
   ],
   providers: [
     RegistraionService,
-    // AuthService,
-    // AuthGuard
+    AuthService,
+    AuthGuard
   ],
   bootstrap: [AppComponent],
   exports: [

@@ -1,10 +1,11 @@
-import { Injectable, OnInit } from  '@angular/core';
-import { AngularFireDatabase , AngularFireList } from 'angularfire2/database'
+import { Injectable, OnInit } from '@angular/core';
+import { AngularFireDatabase, AngularFireList } from 'angularfire2/database'
 
 @Injectable()
 export class RegistraionService implements OnInit {
 
       usersList: AngularFireList<any>;
+      eventsList: AngularFireList<any>;
       messagesList: AngularFireList<any>;
       seminarsList: AngularFireList<any>;
       seminarsRegistrations: AngularFireList<any>;
@@ -17,16 +18,46 @@ export class RegistraionService implements OnInit {
 
       }
 
-      getData() {
-            this.usersList = this.db.list('registrations');
-            // console.log(this.usersList);
-            return this.usersList;
+      /*==========================================================
+            DASHBOARD: EVENTS - SEMINARS LIST TO DISPLAY ON INDEX
+      ============================================================*/
+
+      getEventsList() {
+            this.eventsList = this.db.list('events-register');
+            return this.eventsList.snapshotChanges();
       }
 
-      insertEmployee(user: IRegistration) {
+      //Create Events
+      createEvent(event: IEvent) {
+            this.eventsList.push(event);
+      }
+
+      deleteEvent($key: string) {
+            this.eventsList.remove($key);
+      }
+
+      /*=======================================
+            DASHBOARD: APPLICATIONS
+      =========================================*/
+
+      //Get Students Applications List
+      getApplicantsList() {
+            this.usersList = this.db.list('registrations');
+            return this.usersList.snapshotChanges();
+      }
+
+      //Insert to Students Applications List
+      inserApplication(user: IRegistration) {
             this.usersList.push(user);
       }
+      //Deleting single application
+      deleteItemFromApplications($key: string) {
+            this.usersList.remove($key);
+      }
 
+      /*=======================================
+            DASHBOARD: CONTACTS
+      =========================================*/
 
       getMessages() {
             this.messagesList = this.db.list('messages');
@@ -34,7 +65,7 @@ export class RegistraionService implements OnInit {
             return this.messagesList
       }
 
-      insertMessage(message: IContact){
+      insertMessage(message: IContact) {
             this.messagesList.push(message);
       }
 
@@ -43,15 +74,23 @@ export class RegistraionService implements OnInit {
             return this.seminarsList;
       }
 
+      /*=======================================
+            DASHBOARD: SEMINARS
+      =========================================*/
+
+      // Get Seminar Registrations List
       getSeminarsRegistrations() {
             this.seminarsRegistrations = this.db.list('seminar-registrations');
-            return this.seminarsRegistrations;
+            return this.seminarsRegistrations.snapshotChanges();
       }
-
-      insertSeminarRegistration(regData: ISeminar){
+      // Insert to Seminar Register
+      insertSeminarRegistration(regData: ISeminar) {
             this.seminarsRegistrations.push(regData);
       }
-
+      // Delete a record from Seminars List
+      deleteItemFromSeminars($key: string) {
+            this.seminarsRegistrations.remove($key);
+      }
 
 }
 
@@ -67,12 +106,21 @@ export interface IRegistration {
       message: String;
 }
 
+export interface IEvent {
+      startDate: string;
+      endDate: string;
+      stackTaught: string;
+}
+
+
 export interface IContact {
       name: string;
       email: string;
       phone: number;
       message: string;
 }
+
+
 
 export interface ISeminar {
       name: string;

@@ -1,0 +1,40 @@
+<div class="app-section">
+  <div class="details-section">
+    <h4>Students Applications</h4>
+  </div>
+  <div class="table-responsive">
+      <table class="table table-bordered table-hover" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5">
+        <thead>
+          <tr>
+            <th><mfDefaultSorter by="name">Name</mfDefaultSorter></th>
+            <th><mfDefaultSorter by="phone">Phone</mfDefaultSorter></th>
+            <th><mfDefaultSorter by="email">Email</mfDefaultSorter></th>
+            <th><mfDefaultSorter by="email">Shift</mfDefaultSorter></th>
+            <th><mfDefaultSorter by="qualification">Qualification</mfDefaultSorter></th>
+            <th><mfDefaultSorter by="college">College</mfDefaultSorter></th>
+            <th><mfDefaultSorter by="address">Address</mfDefaultSorter></th>
+            <th><mfDefaultSorter by="message">Message</mfDefaultSorter></th>
+            <th><mfDefaultSorter by="delete">Delete</mfDefaultSorter></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of mf.data" class="table-row">
+            <td>{{item.firstName}} {{item.lastName}}</td>
+            <td>{{item.phone}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.shift?.value}}</td>
+            <td>{{item.qualification?.value}}</td>
+            <td>{{item.college}}</td>
+            <td>{{item.address}}</td>
+            <td>{{item.message}}</td>
+            <td (click)="deleteRecord(item.$key)"><i class="fas fa-trash d-flex justify-content-center"></i></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="9"><mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator></td>
+          </tr>
+        </tfoot>
+      </table>
+  </div>
+</div>

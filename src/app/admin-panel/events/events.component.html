@@ -1,0 +1,59 @@
+<div class="app-section">
+  <div class="row">
+    <div id="form-group" class="col-lg-6" style="padding-left: 28px;">
+      <h4 class="text-muted">Create an event</h4>
+      <hr>
+      <div class="event-form">
+        <form class="form-group" [formGroup]='eventsFormGroup'>
+          <input type="hidden" formControlName='$key'>
+
+          <div>
+            <label for="start-date">Start Date</label>
+            <input class="form-control" formControlName='startDate' type="date" id="start-date">
+          </div>
+
+          <div>
+            <label for="end-date">Deadline</label>
+            <input class="form-control" formControlName='endDate' type="date" id="end-date">
+          </div>
+
+          <div>
+            <label for="stack-taught">Stack</label>
+            <input class="form-control" formControlName='stackTaught' type="text" id="stack-taught">
+          </div>
+
+          <button class="btn btn-primary" (click)='onCreateEvent()' [disabled]='!eventsFormGroup.valid'>Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div id="events-table" class='table-responsive'>
+        <h4 class="text-muted">Events List</h4>
+        <hr>
+        <table class="table table-bordered table-hover" [mfData]="dataList" #mf="mfDataTable" [mfRowsOnPage]="10">
+        <thead>
+          <tr>
+            <th><mfDefaultSorter by="start">Start</mfDefaultSorter></th>
+            <th><mfDefaultSorter by="deadline">Deadline</mfDefaultSorter></th>
+            <th><mfDefaultSorter by="stack">Stack</mfDefaultSorter></th>
+            <th><mfDefaultSorter by="delete">Delete</mfDefaultSorter></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of dataList" class="table-row">
+            <td>{{item.startDate}}</td>
+            <td>{{item.endDate}}</td>
+            <td>{{item.stackTaught}}</td>
+            <td (click)="deleteRecord(item.$key)"><i class="fas fa-trash d-flex justify-content-center"></i></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4"><mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator></td>
+          </tr>
+        </tfoot>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,19 +1,51 @@
 #seminar-section {
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(to right top, #a62a96, #776bd6, #009af6, #00bff7, #1fdee7);
-}
-textarea#inputMessage {
-    border-radius: 3%;
+  height: 100%;
+  width: 100%;
+  padding-top: 40px;
+  background-image: linear-gradient(to right top, #a62a96, #776bd6, #009af6, #00bff7, #1fdee7);
 }
 
-// #495057
+a.navbar-brand {
+  cursor: pointer;
+}
+
+a.nav-link {
+  cursor: pointer;
+}
+
+a.nav-link:hover {
+  color: white !important;
+}
+
+.nav-apply-btn {
+  border-radius: 25px;
+}
+
+
+textarea#inputMessage {
+  border-radius: 3%;
+}
+
 
 #inputMessage::placeholder {
-    color: #495057;
-    font-size: 1rem;
+  color: #495057;
+  font-size: 1rem;
 }
 
 select#inputDate {
-    border-radius: 20px;
+  border-radius: 20px;
+}
+
+
+.footer {
+  width: 100%;
+  background-color: #343a40;
+  height: 60px;
+  padding-top: 20px;
+}
+
+.footer a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
