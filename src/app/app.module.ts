@@ -48,9 +48,9 @@ import { AuthGuard } from './admin-panel/core/auth.guard';
     ToastrModule.forRoot(),
     ToastNoAnimationModule,
     SharedModule,
-    AppRoutingModule,
     DashboardModule,
-    AdminModule
+    AdminModule,
+    AppRoutingModule
   ],
   providers: [
     RegistraionService,
