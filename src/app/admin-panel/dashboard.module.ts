@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { Routes, RouterModule } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
-import { MainComponent } from './main/main.component';
 
 
 import { DataTableModule } from "angular-6-datatable";
@@ -45,7 +44,6 @@ const dashRoutes: Routes = [
     SeminarsComponent,
     EventsComponent,
     NavigationComponent,
-    MainComponent
   ],
   exports: [
   ]
