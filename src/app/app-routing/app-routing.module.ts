@@ -8,7 +8,7 @@ import { SeminarComponent } from '../seminar/seminar.component';
 
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: 'index', pathMatch: 'full' },
+  { path: '', redirectTo: '/index', pathMatch: 'full' },
   { path: 'index', component: IndexComponent },
   { path: 'apply', component: RegistrationComponent },
   { path: 'contact', component: ContactComponent },
