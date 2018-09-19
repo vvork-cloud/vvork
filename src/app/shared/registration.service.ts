@@ -46,6 +46,11 @@ export class RegistraionService implements OnInit {
             return this.usersList.snapshotChanges();
       }
 
+      getApplicantsListForExport() {
+            this.usersList = this.db.list('registrations');
+            return this.usersList;
+      }
+
       //Insert to Students Applications List
       inserApplication(user: IRegistration) {
             this.usersList.push(user);
@@ -83,6 +88,12 @@ export class RegistraionService implements OnInit {
             this.seminarsRegistrations = this.db.list('seminar-registrations');
             return this.seminarsRegistrations.snapshotChanges();
       }
+      
+      getSeminarsRegistrationsForExport() {
+            this.seminarsRegistrations = this.db.list('seminar-registrations');
+            return this.seminarsRegistrations.valueChanges();      
+      }
+      
       // Insert to Seminar Register
       insertSeminarRegistration(regData: ISeminar) {
             this.seminarsRegistrations.push(regData);
